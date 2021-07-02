@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Site description and Keywords-->
+    <meta name="description"
+        content="Mighty Quest is an interactive website to help growth of children in year 2 and move towards year 3 by learning with play.">
+    <meta name="keywords" content="learning for kids, year 2 learning material, KS1 study material, learn and play children">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mighty Quest</title>
+</head>
+<body>
+    
+    <!--Header and menu links-->
+    <header>
+        <div id="logo">
+            <h1>Mighty Quest</h1>
+        </div>
+        <div id="menu">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="quiz.html" class="active">Quiz</a>
+            <a href="memory-game.html">Memory Game</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!--Intro Quiz section with collapsible tabs-->
+    <section>
+        <h2>Quiz</h2>
+        <hr>
+        <p id="center">Please click on the relevant subject to play the quiz and enjoy.</p>
+        <div class="quiz-tab">
+            <button class="quiz-links" onclick="openQuiz(event, 'science')">Science</button>
+            <button class="quiz-links" onclick="openQuiz(event, 'geography')">Geography</button>
+            <button class="quiz-links" onclick="openQuiz(event, 'maths')">Maths</button>
+        </div>
+    </section>
+
+    <!--Science Quiz section-->
+    <div id="science" class="quiz-data">
+        <!-- start Quiz button -->
+        <div class="start_btn">
+            <button>Start Science Quiz</button>
+        </div>
+        <!-- Instruction box for quiz -->
+        <div class="info_box ">
+            <div class="info-title"><span>Rules of the Quiz</span></div>
+            <div class="info-list">
+                <div class="info">You will have only <span>25 seconds</span> per each question.</div>
+                <div class="info">Once you select your answer, it cannot be changed.</div>
+                <div class="info">You cannot select any option once the time is up.</div>
+                <div class="info">You will get points on the basis of your correct answers.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Start Quiz</button>
+            </div>
+        </div>
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Science Quiz</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">25</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="question_text">
+                    <!-- Inserted question from JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- Inserted options from JavaScript -->
+                </div>
+            </section>
+            <!-- footer section of Quiz Box -->
+            <section class="footer">
+                <div class="total_question">
+                    <!-- Inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Next Question</button>
+            </section>
+        </div>
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-medal"></i>
+            </div>
+            <div class="complete_text">You have completed the Quiz!</div>
+            <div class="score_text">
+                <!-- Inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="geography" class="quiz-data">
+        add quiz
+    </div>
+    
+    <div id="maths" class="quiz-data">
+        add quiz
+    </div>
+    <hr>
+
+    <!--Quick links to all tabs again with buttons-->
+    <section>
+        <h2>Click on appropriate button if you wish to proceed.</h2>
+        <div id="bottom-container">
+            <a href="index.html">
+                <button class="bottom-link"><span>Home</span></button>
+            </a>
+            <a href="lessons.html">
+                <button class="bottom-link"><span>Lessons</span></button>
+            </a>
+            <a href="memory-game.html">
+                <button class="bottom-link"><span>Memory Game</span></button>
+            </a>
+            <a href="contact.html">
+                <button class="bottom-link"><span>Contact</span></button>
+            </a>
+        </div>
+        <hr>
+    </section>
+        
+    <!--Footer-->
+    <footer>
+        <ul class="social-media">
+            <li>    
+                <a href="https://twitter.com" target="_blank" rel="noopener" 
+                aria-label="Visit our Twitter page (Opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener" 
+                aria-label="Visit our Facebook page (Opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener" 
+                aria-label="Visit our Instagram page (Opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
+            </li>
+            <li>
+                <p>Copyright for project</p>
+            </li>
+        </ul>
+    </footer>
+    
+    <!--General and Quiz Javascript page link-->
+    <script src="assets/js/quizscript.js"></script>
+
+    <!-- Quiz Questions Javascript page link-->
+    <script src="assets/js/quizquestions.js"></script>
+
+
+    <!--Fontawesome script-->
+    <script src="https://kit.fontawesome.com/22f8691744.js" crossorigin="anonymous"></script>
+    
+    </body>
+    </html>
